@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+$primaryFont: "Merriweather", serif;
+$secondaryFont: "Open Sans", sans-serif;
+
+*,
+ul,
+ol {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #1155cc;
+}
+
+body {
+  text-rendering: auto;
+  font-family: $secondaryFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  padding: 20px 0;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  background-color: #f8f9fa;
+}
+
+.primary-structure {
+  box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+}
+
+.primary-box {
+  & + .primary-box {
+    margin-top: 35px;
+  }
+  small {
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #666666;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #2079c7;
+    font-weight: bold;
+  }
+
+  h4 {
+    color: #000;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: $primaryFont;
+    a {
+      color: #000;
+    }
+  }
+  p {
+    font-family: $primaryFont;
+    margin: 0;
+    color: #666666;
+    // line-height: normal;
+    font-weight: 400;
+    font-size: 12px;
+    & + p {
+      margin-top: 8px;
+    }
+  }
+}
+
+.project-box {
+  margin-top: 5px;
+  & + .project-box {
+    margin-top: 20px;
+  }
+}
+
+.experience-box {
+  & + .experience-box {
+    margin-top: 20px;
+  }
+}
+
+.footer {
+  margin-top: 100px;
+  p {
+    font-style: 14px;
+    font-family: $primaryFont;
+    color: #000;
+  }
+}
+
+.header {
+  margin-bottom: 50px;
+  h1 {
+    margin: 0;
+    font-size: 52px;
+    font-weight: 700;
+    font-family: $primaryFont;
+    color: #000000;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #000;
+  }
+}
+
+.skills-wrap {
+  margin-top: 10px;
+  & + .skills-wrap {
+    margin-top: 20px;
+  }
+  h5 {
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+}
+
+.contact-info {
+  margin-bottom: 50px;
+  p {
+    margin: 0 0 15px;
+    font-size: 12px;
+    color: #000;
+  }
+  strong {
+    display: block;
+    font-size: 12px;
+    color: #000;
+  }
+}
